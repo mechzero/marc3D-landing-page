@@ -1,59 +1,177 @@
 <!DOCTYPE >
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
-  <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
-  <link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-  <!-- HTML Follows BEM naming conventions 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing-Page</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
-  <header class="page__header">
-    <nav class="navbar__menu">
-      <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
-    </nav>
-  </header>
-  <main>
-    <header class="main__hero">
-      <h1>Landing Page </h1>
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
     </header>
-    <!-- Each Section has an ID (used for the anchor) and 
+    <main>
+      <header class="main__hero">
+        <h1>Marc3D</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
-      <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+      <section id="section1" data-nav="Section 1" class="your-active-class">
+        <div class="landing__container">
+          <h2>Materials</h2>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-    <section id="section2" data-nav="Section 2">
-      <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <p>
+            PLA - or polylactic acid, stands out as a biodegradable polymer
+            derived from renewable resources, such as cornstarch or sugarcane.
+            It's celebrated for its environmental sustainability and is commonly
+            used in 3D printing for its ease of use and compatibility with
+            various printers. However, PLA may soften or deform at temperatures
+            exceeding 60-65 degrees Celsius.
+          </p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-    <section id="section3" data-nav="Section 3">
-      <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <p>
+            ABS- known as acrylonitrile butadiene styrene, is a thermoplastic
+            renowned for its strength and durability, making it suitable for
+            various applications. It exhibits higher temperature resistance
+            compared to PLA, remaining stable up to about 80-85 degrees Celsius.
+            ABS is favored for its ability to withstand impact and temperature
+            variations, making it ideal for functional prototypes and mechanical
+            parts.
+          </p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="page__footer">
-    <p>&copy Udacity</p>
-  </footer>
+          <p>
+            PETG - a glycol-modified version of polyethylene terephthalate, is
+            recognized for its impact resistance, clarity, and durability. It
+            combines the strength of ABS with the printability of PLA, making it
+            an excellent choice for engineering applications and functional
+            parts. PETG can endure temperatures around 70-75 degrees Celsius
+            without significant deformation. Understanding the temperature
+            limitations and unique properties of these 3D printing materials is
+            crucial when selecting the right material for specific projects and
+            applications.
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+        <div class="landing__container">
+          <h2>CAD (Computer Aided Design)</h2>
+          <p>
+            Solidworks is a robust and versatile CAD software renowned for its
+            user-friendly interface and powerful design capabilities. It offers
+            an extensive suite of tools for modeling, simulation, and
+            engineering analysis. Solidworks excels in creating precise 3D
+            models and assemblies, aiding in product development, mechanical
+            design, and manufacturing. Its intuitive features make it a popular
+            choice for engineers and designers seeking comprehensive solutions
+            for intricate design challenges.
+          </p>
 
-</body>
+          <p>
+            Fusion 360, on the other hand, is a cloud-based CAD/CAM tool by
+            Autodesk that combines design, engineering, and manufacturing
+            capabilities into a unified platform. Notably, Fusion 360 offers
+            collaborative features, allowing teams to work simultaneously on
+            projects from different locations. Its versatility lies in its
+            ability to seamlessly integrate CAD, CAM, and simulation tools,
+            making it suitable for startups, hobbyists, and professionals alike.
+          </p>
+
+          <p>
+            Both Solidworks and Fusion 360 are esteemed CAD software options,
+            each with its unique strengths, enabling designers and engineers to
+            bring innovative ideas to life efficiently and effectively.
+          </p>
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+        <div class="landing__container">
+          <h2>3D Scanning</h2>
+          <p>
+            The EinScan series, particularly the EinScan Pro, is a highly
+            versatile 3D scanner known for its precision and adaptability. It
+            employs various scanning modes, including handheld rapid scan, fixed
+            scan, and automatic scan, offering users flexibility in capturing
+            objects of different sizes and complexities. The EinScan Pro's high
+            accuracy and ease of use make it a popular choice across industries,
+            from product design and heritage preservation to reverse engineering
+            and healthcare.
+          </p>
+
+          <p>
+            Another notable 3D scanning tool is the Artec Eva. This handheld
+            scanner is lauded for its ability to capture intricate details and
+            textures with exceptional speed and precision.
+          </p>
+
+          <p>
+            The Artec Eva utilizes structured light technology, enabling users
+            to generate high-resolution 3D models swiftly. Its portability and
+            compatibility with various surfaces make it ideal for applications
+            in art, design, forensics, and industrial inspection.
+          </p>
+
+          <p>
+            Both the EinScan Pro and Artec Eva stand out in the realm of 3D
+            scanning tools, catering to diverse user needs and delivering
+            high-quality scans suitable for a wide array of professional and
+            creative applications.
+          </p>
+        </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        <div class="landing__container">
+          <h2>3D Printing</h2>
+          <p>
+            Prusa printers are renowned for their reliability, user-friendly
+            design, and open-source philosophy. The Prusa i3 MK3S, a flagship
+            model, offers exceptional print quality, ease of assembly, and
+            upgradability. With features like automatic bed leveling and a vast
+            online community, Prusa printers are popular among hobbyists and
+            professionals alike, providing a robust platform for creating
+            high-quality 3D prints."
+          </p>
+
+          <p>
+            "Bamboo Labs' innovative approach to 3D printing focuses on
+            sustainability. Their eco-friendly 3D printers, crafted from
+            sustainable materials like bamboo and recycled plastics, prioritize
+            environmental consciousness without compromising on performance.
+            These printers, such as the Bamboo Labs EcoPrinter, merge technology
+            with eco-consciousness, appealing to users seeking greener
+            alternatives in their 3D printing endeavors."
+          </p>
+
+          <p>
+            "Creality has made a significant impact on the 3D printing market,
+            offering a diverse range of printers suitable for various budgets
+            and skill levels. Models like the Ender series, particularly the
+            Creality Ender 3, are highly regarded for their affordability,
+            reliability, and large community support. Creality's commitment to
+            constant innovation has positioned them as a leading choice for
+            beginners and experienced users seeking cost-effective yet powerful
+            3D printers.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

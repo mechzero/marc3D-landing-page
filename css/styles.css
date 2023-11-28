@@ -1,3 +1,5 @@
+
+
 /*
  *
  * CSS written based on SMACSS architecture.
@@ -9,14 +11,56 @@
 */
 
 
+/* ---- NavBar Menu Items Styling ---- */
+
+#navbar__list {
+    display: flex;
+    background-color: black;
+    align-items: right;
+    justify-content: right;
+  }
+
+  ul {
+    list-style: none;
+ 
+  }
+  
+  li {
+    margin-right: 20px; 
+    
+  }
+
+
+  li:hover {
+    color: red; /* Change the color to your desired color */
+    /* background-color: gray; */
+    /* Additional styles */
+  }
+
+
+  
+/* Styles for the active navigation item */
+.active-nav-item {
+    /* Define your styles for the active state */
+    background-color: gray;
+    color: red; /* Change the color to your desired active color */
+    font-weight: bold; /* Or any other style to indicate it's active */
+  }
+  
+
+
 /* ---- Base Rules ---- */
+
+
 body {
-    background: rgb(136,203,171);
-    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    background-image: url('../images/m.jpeg');
+   
+    background-size: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
-}
+  }
 
 
 /* Typeography General*/
